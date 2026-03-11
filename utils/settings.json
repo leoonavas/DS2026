@@ -1,0 +1,52 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0,
+  "editor.fontSize": 14.1,
+  "editor.lineHeight": 1.8,
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "extensions.ignoreRecommendations": true,
+  "typescript.tsserver.log": "off",
+  "workbench.layoutControl.enabled": false,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Min Dark",
+  "workbench.preferredLightColorTheme": "Min Dark",
+  "gitlens.advanced.messages": {
+    "suppressIntegrationDisconnectedTooManyFailedRequestsWarning": true,
+    "suppressIntegrationRequestTimedOutWarning": true
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.multiCursorLimit": 50000,
+  "editor.fontFamily": "JetBrains Mono",
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "workbench.statusBar.visible": false,
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 11,
+      "y": 10
+    }
+  },
+  "apc.header": {
+    "height": 0
+  },
+  "window.commandCenter": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "git.ignoreMissingGitWarning": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "chat.tools.terminal.autoApprove": {
+    "Rename-Item": true
+  },
+  "window.menuBarVisibility": "toggle",
+  "workbench.statusBar.visible": false,
+  "breadcrumbs.enabled": false,
+  "chat.viewSessions.orientation": "stacked",
+  "files.autoSave": "onWindowChange",
+  "chat.tools.global.autoApprove": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
