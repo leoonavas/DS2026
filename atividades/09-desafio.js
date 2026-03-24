@@ -194,7 +194,11 @@ function login(user, senha) {
 login("leonavas", "cristianodepaula123")
 // 18. Verifique o maior entre dois números.
 e("18")
-
+function qualMaior(n1, n2) {
+    if (n1 > n2) console.log("O número", n1, "é MAIOR que o", n2)
+    else console.log("O número", n2, "é MAIOR que o número", n1)
+}
+qualMaior(20, 25)
 // 19. Verifique o maior entre três números.
 // 20. Classifique a idade:
 //        Criança
