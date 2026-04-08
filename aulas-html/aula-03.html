@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML | Aula 03</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        .my-text {
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 17px;
+            margin-left: 20px;
+            text-transform: capitalize;
+        }
+        #header {
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            border-radius: 2px;
+            background-color: red;
+             height: 130px
+        }
+        #main {
+            background-color: #de35b7; 
+            height: 350px;
+            border-radius: 3px;
+        }
+        #aside {
+            background-color: blue; 
+            height: 100%; 
+            width: 30%; 
+            float: left
+        }
+        #content {
+            background-color: green; 
+            height: 100%; 
+            width: 60%; 
+            float: right
+        }
+        #footer {
+            background-color: gray; 
+            height: 40px;
+            font-family: "Inter", sans-serif;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <!-- DIV: Divisão de conteúdo (Vermelho) -->
+      <h1>Conteúdo do cabeçalho</h1>
+    </div>
+
+    <div id ="main">
+      <!-- DIV: Divisão de conteúdo (Rosa) -->
+      <div id = "aside">
+        <!-- DIV: Divisão de conteúdo (Azul) -->
+        <h2 class = "my-text">conteúdo Barra Lateral</h2>
+      </div>
+      <div
+        id = "content"
+      >
+        <!-- DIV: Divisão de conteúdo (Verde) -->
+        <h2 class = "my-text">Conteúdo Principal</h2>
+      </div>
+    </div>
+
+    <div id ="footer">
+      <!-- DIV: Divisão de conteúdo (Cinza) -->
+      <h2 class = "my-title">Conteúdo do rodapé</h2>
+    </div>
+  </body>
+</html>

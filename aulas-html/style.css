@@ -1,0 +1,40 @@
+
+    .my-text {
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 17px;
+        margin-left: 20px;
+        text-transform: capitalize;
+    }
+    #header {
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        text-transform: uppercase;
+        border-radius: 2px;
+        background-color: red;
+            height: 130px
+    }
+    #main {
+        background-color: #de35b7; 
+        height: 350px;
+        border-radius: 3px;
+    }
+    #aside {
+        background-color: blue; 
+        height: 100%; 
+        width: 30%; 
+        float: left
+    }
+    #content {
+        background-color: green; 
+        height: 100%; 
+        width: 60%; 
+        float: right
+    }
+    #footer {
+        background-color: gray; 
+        height: 40px;
+        font-family: "Inter", sans-serif;
+        border-radius: 5px;
+        text-align: center;
+    }

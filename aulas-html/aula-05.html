@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | Aula 05</title>
+    <link rel="stylesheet" href="aula-05.css">
+</head>
+<body>
+    <div>
+        <div id = "Form">
+            <h1>Cadastro de Alunos</h1>
+            <form action="" method="get">
+                <label for="inNome">Nome:</label>
+                <input type="text" name="inNome" />
+
+                <br>
+
+                <label for="inMail">Email:</label>
+                <input type="email" name="inMail" />
+
+                <br>
+
+                <label for="inSenha">Senha:</label>
+                <input type="password" name="inSenha" />
+
+                <br>
+
+                <input type="date" name="inDate" />
+
+                <br>
+
+                <label for="inCEP">CEP:</label>
+                <input type="number" name="inCEP" />
+
+                <br>
+
+            <label for="escolha">Sexo:</label>
+            <input list="lista-opcoes" id="escolha" name="escolha" placeholder="Selecione ou digite...">
+
+            <datalist id="lista-opcoes">
+            <option value="Masculino">
+            <option value="Feminino">
+            <option value="Não-Binário">
+            </datalist>
+
+                <br>
+
+                <label for="inCheckbox">Você concorda com os termos?</label>
+                <input type="checkbox" name="inCheckbox" />
+
+
+                <button>Logar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

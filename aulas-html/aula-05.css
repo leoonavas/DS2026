@@ -1,0 +1,36 @@
+/*
+Comentários em CSS são utilizados com /**/ /*
+SELETORES EM CSS
+Seletor de Classe -> .
+Seletor de ID -> #
+Seletor de elemento -> Tag HTML
+*/
+
+body{
+    background-color: #d3d3d3;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    background-color: blue;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    float: left;
+    background-size: contain;
+    padding-top: 20px;
+    text-align: center;
+} 
+#Forms { 
+   width: 50%; /* Ocupa a largura total do contêiner */
+    padding: 12px 15px; /* Espaçamento interno confortável */
+    margin: 8px 0; /* Margem para separar de outros elementos */
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+    border: 2px solid #ccc; /* Borda visível, mas neutra */
+    border-radius: 6px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte ideal para não dar zoom no mobile */
+    transition: border-color 0.3s; /* Transição suave para o foco */
+}
