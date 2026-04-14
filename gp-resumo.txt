@@ -1,0 +1,17 @@
+Pilares:
+Os óculos AR, utilizam como padrão de chave SSH, a sequência: Ed25519
+- Use de HPKE para ofuscação do payload. *Apenas o servidor possui a chave necessária para descriptografar o payload.
+Proteção contra interceptação das chaves: Amarração Criptográfica, que inclui como um identifier único para aquele JWT.
+
+Esquema na prática:
+Passo 1 (Dispositivo):
+Usuário faz uma ação -> dispositivo coleta a requisição -> criptografa a requisição -> payload pronto -> geração do ID: dispositivo calcula o hash SHA-256 do payload -> dispositivo gera um JWT e insere o hash calculado no passo anterior -> tudo é assinado com a chave padrão SSH.
+
+Passo 2 (Trafégo):
+dispositivo estabelece uma conexão TLS com o server -> valida identidade do dispositivo e do server -> JWT vai no header e o payload no body do fetch
+
+Passo 3 (Chegada no server):
+Gateway recebe os dados -> verfica se o JWT possui uma assinatura válida (Gerada pelo SSH padrão) -> valida se o token não foi expirado -> verifica no cache se o jti foi usado anteriormente para evitar duplo uso -> compara o ID (hash SHA-256) do payload e compara com o ID do JWT (se diferentes quer dizer que houve interceptação)
+
+Passo 4:
+após validado o payload é entregue a API -> o back-end usa a chave do HPKE para descriptografar os dados -> devolve no túnel as permissões do usuário e autorização
