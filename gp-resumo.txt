@@ -6,7 +6,7 @@ Proteção contra interceptação das chaves: Amarração Criptográfica, que in
 Esquema na prática:
 Passo 1 (Dispositivo):
 Usuário faz uma ação -> dispositivo coleta a requisição -> criptografa a requisição -> payload pronto -> geração do ID: dispositivo calcula o hash SHA-256 do payload -> dispositivo gera um JWT e insere o hash calculado no passo anterior -> tudo é assinado com a chave padrão SSH.
-
+    
 Passo 2 (Trafégo):
 dispositivo estabelece uma conexão TLS com o server -> valida identidade do dispositivo e do server -> JWT vai no header e o payload no body do fetch
 
@@ -15,3 +15,17 @@ Gateway recebe os dados -> verfica se o JWT possui uma assinatura válida (Gerad
 
 Passo 4:
 após validado o payload é entregue a API -> o back-end usa a chave do HPKE para descriptografar os dados -> devolve no túnel as permissões do usuário e autorização
+
+POSSÍVEIS MELHORIAS (Avalidas por mim):
+- Substituir TLS por mTLS;
+- Usar sistema de Zero Trust;
+
+POSSÍVEIS MELHORIAS AVALIADAS PELA IA:
+TLS 1.3 + Perfect Forward Secrecy
+mTLS entre serviços
+JWT curto + refresh
+assinatura de requisição (HMAC)
+nonce + timestamp (anti-replay)
+WAF + rate limiting
+Zero Trust
+criptografia de payload (opcional, alto nível)
