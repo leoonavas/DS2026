@@ -1,13 +1,77 @@
-/* Reset da Página */
-*{
-    margin: 10;
-    padding: 10;
-    box-sizing: border-box;
+/* Reset da página https://dontpad.com/ds-jau-sesi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100dvh;
-    color: rgb(12, 12, 12);
+body {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100dvh;
+  width: 100%;
+}
+
+header {
+  background-color: #1e90ff; /* */
+  color: #ffffff;
+  padding: 24px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* MENU DE NAVEGAÇÃO*/
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #1e90ff;
+  font-style: italic;
+}
+
+/* LAYOUT PRINCIPAL // LEIAUTE */
+main {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+/* LATERAL */
+aside {
+  width: 25%;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* CONTEUDO */
+section {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
