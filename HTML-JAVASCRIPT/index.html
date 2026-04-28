@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Dinâmico</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
 </head>
 <body>
-    
+    <h1>HTML Dinamico com JavaScript</h1>
+
+    <button id="btn" onclick="olaMundo()">Clique aqui</button>
+
+    <p id="Texto">Esse texto será alterado!!</p>
+
+    <button onclick="mudarTexto()">Mudar Texto</button>
+
+    <h3>Formulário de Contrato</h3>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <button onclick="enviarNome()">Enviar</button>
+    </form>
+
+    <form>
+        <label for="n1">Primeiro Número:</label>
+        <input type="number" id="n1">
+
+        <label for="n2">Segundo Número:</label>
+        <input type="number" id="n2">
+
+        <button onclick="somar()">Somar</button>
+
+        <p id="result"></p>
+    </form>
+
+    <!-- A ref de script vai sempre no final do body -->
+    <script src="js/script.js"></script>
 </body>
 </html>
