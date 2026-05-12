@@ -168,22 +168,17 @@ const exercicio12 = () => {
 const exercicio13 = () => {
   let num1 = Number(document.getElementById("num1").value);
   let num2 = Number(document.getElementById("num2").value);
-  let mensagem = " #";
-
-  for (let i = num1; i <= num2; i++) {
-
-    let eprimo = true;
-
-    for (let i2 = 2; i2 <= Math.sqrt(i); i2++) {
-      if (i % i2 === 0) {
-        eprimo = false;
+  let mensagem = ""
+  const ePrimo = (numero) => {
+    let primo = true;
+    for (let i = 2; i < numero; i++) {
+      if (numero % i == 0) {
+        primo = false;
       }
     }
-
-    if (eprimo === true) {
-      mensagem = mensagem + i + " #";
-    }
+    return primo;
   }
+
 
   document.getElementById("resultado").innerHTML = mensagem;
 };
